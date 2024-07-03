@@ -1,0 +1,6 @@
+config KERNEL_TCP_MD5SIG
+    bool "Enable TCP MD5 Signature support"
+    default y
+    depends on KERNEL_IPV6 && KERNEL_NET
+    help
+      Enable support for TCP MD5 Signature option in the kernel.
